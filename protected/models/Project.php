@@ -1,4 +1,4 @@
-<?php
+        <?php
 
 /**
  * This is the model class for table "tbl_project".
@@ -47,7 +47,8 @@ class Project extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, description, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
-		);
+		    array('name, description', 'required')
+        );
 	}
 
 	/**
